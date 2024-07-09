@@ -31,7 +31,7 @@ const RegisterScreen = () => {
 
     //send a post request to the backend API
     axios
-      .post("http://192.168.0.123:8081/register", user)
+      .post("http://192.168.0.123:8000/register", user)
       .then((response) => {
         console.log(response);
         Alert.alert(
@@ -77,7 +77,7 @@ const RegisterScreen = () => {
               color: "041E42",
             }}
           >
-            Naye user hain? Register karein
+            Naye user hain? Register karein.
           </Text>
         </View>
 
